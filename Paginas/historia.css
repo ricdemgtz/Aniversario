@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Se mantiene para el menú desplegable */
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding-bottom: 100px; /* Agrega un espacio en la parte inferior del contenido principal para dejar espacio al footer */
+}
+
+/* Estilos para el menú desplegable */
+#navbar {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 100%; /* Coloca el menú debajo del header */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho del viewport */
+    text-align: center;
+}
+
+#navbar.show {
+    display: block;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar li {
+    padding: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Estilos para el botón de menú */
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-toggle:focus {
+    outline: none;
+}
+
+/* Estilos para los capítulos */
+section {
+    padding: 50px 20px; /* Espacio interno para los capítulos */
+    background-color: #fff; /* Fondo blanco para resaltar los capítulos */
+    margin: 20px; /* Margen exterior para separar los capítulos */
+    border-radius: 10px; /* Bordes redondeados para los capítulos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar los capítulos */
+}
+
+section h2 {
+    font-size: 24px; /* Tamaño de fuente más grande para los títulos de los capítulos */
+    margin-bottom: 20px; /* Espacio inferior para los títulos de los capítulos */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    bottom: 0; /* Se asegura de que el footer esté siempre en la parte inferior */
+    box-sizing: border-box; /* Hace que el padding y el borde se incluyan en el ancho y alto total */
+    border-top: 1px solid #ddd; /* Agrega un borde superior al footer */
+}
+
+/* Estilos para los botones sociales en el footer */
+.social-button {
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos específicos para los botones de Instagram */
+.Lunita {
+    background-color: #800085; /* Color de Instagram */
+}
+
+/* Estilos específicos para los botones de Facebook */
+.Solecito {
+    background-color: #ff8800; /* Color de Facebook */
+}
+
+/* Estilos para centrar los botones dentro del footer */
+footer .social-button {
+    display: inline-block; /* Permite alinear los botones horizontalmente */
+}

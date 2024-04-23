@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2edff; /* Morado muy claro para el fondo de la página */
+    color: #333; /* Color de texto oscuro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #551a8b; /* Morado oscuro para el título */
+}
+
+.carta {
+    background-color: #ffffff; /* Fondo blanco para las cartas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.carta-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #551a8b; /* Morado oscuro para el título de la carta */
+    margin-bottom: 10px;
+}
+
+.contenido-carta {
+    display: none; /* Oculta el contenido de la carta por defecto */
+}
+
+.carta:hover .contenido-carta {
+    display: block; /* Muestra el contenido de la carta al pasar el cursor sobre ella */
+}
+
+/* Estilos para cartas y cupones */
+.carta, .cupon {
+    border: 2px solid #8e44ad; /* Borde morado */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio entre cartas/cupones */
+    padding: 20px; /* Espacio interno */
+    background-color: #f5f5f5; /* Color de fondo */
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8e44ad; /* Color morado */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    font-size: 16px;
+    color: #333; /* Color de texto */
+}
+
+/* Estilos al hacer hover sobre los cupones */
+.cupon:hover {
+    background-color: #8e44ad; /* Cambia el color de fondo al morado */
+    color: #fff; /* Cambia el color del texto a blanco */
+    cursor: pointer; /* Cambia el cursor al puntero */
+}
+
+/* Estilos para los cupones desactivados */
+.cupon.desactivado {
+    opacity: 0.5; /* Reduce la opacidad para indicar que está desactivado */
+    pointer-events: none; /* Deshabilita los eventos del mouse */
+}
